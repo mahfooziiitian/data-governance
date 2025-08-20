@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.mahfooz.hcatalog</groupId>
+        <artifactId>hcatalog-api</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>hcat-api</artifactId>
+    <packaging>jar</packaging>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <cdh.hcat.version>2.1.1-cdh6.3.3</cdh.hcat.version>
+        <cdh.hadoop.version>3.0.0-cdh6.3.3</cdh.hadoop.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hive.hcatalog</groupId>
+            <artifactId>hive-hcatalog-core</artifactId>
+            <version>${cdh.hcat.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.pig/pig -->
+        <dependency>
+            <groupId>org.apache.pig</groupId>
+            <artifactId>pigunit</artifactId>
+            <version>0.17.0-cdh6.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hive.hcatalog</groupId>
+            <artifactId>hive-hcatalog-core</artifactId>
+            <version>${cdh.hcat.version}</version>
+            <classifier>tests</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>${cdh.hcat.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-common</artifactId>
+            <version>${cdh.hcat.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>${cdh.hadoop.version}</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mahfooz.hcatalog</groupId>
+    <artifactId>hcatalog</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <modules>
+        <module>hcatalog-cli</module>
+        <module>hcatalog-admin</module>
+        <module>hcatalog-config</module>
+        <module>hcatalog-schema</module>
+        <module>hcatalog-api</module>
+        <module>hcat-rest</module>
+        <module>hcat-pig</module>
+        <module>hcat-hive</module>
+        <module>hcat-sqoop</module>
+        <module>hcatalog-arch</module>
+        <module>hive-catalog-streaming</module>
+        <module>hcat-faq</module>
+    </modules>
+</project>
